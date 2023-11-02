@@ -6,7 +6,7 @@ import com.example.jukebox.model.Jukebox;
 import com.example.jukebox.model.Setting;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
-import org.springframework.boot.configurationprocessor.json.JSONException;
+import org.json.JSONException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
