@@ -36,7 +36,7 @@ public class SearchService {
             e.printStackTrace();
             throw new GeneralErrorException(ErrorResponse.ServiceUnavailable);
         }
-        if (allSettings == null) throw new GeneralErrorException(ErrorResponse.ServiceUnavailable);
+        if (allSettings == null || allJukes == null) throw new GeneralErrorException(ErrorResponse.ServiceUnavailable);
         Setting requireSetting = findSettingById(settingId);
         if (requireSetting == null) throw new GeneralErrorException(ErrorResponse.ItemNotFound);
         List<Jukebox> filteredjukes = (model == null) ? allJukes : filterJukesByModel(model);
