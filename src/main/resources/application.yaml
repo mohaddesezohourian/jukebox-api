@@ -1,0 +1,8 @@
+server:
+  port: 8090
+config:
+  base-url: http://my-json-server.typicode.com
+  setting-uri: /touchtunes/tech-assignment/settings
+  jukeboxe-uri: /touchtunes/tech-assignment/jukes
+
+
